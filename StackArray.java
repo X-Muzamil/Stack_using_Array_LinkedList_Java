@@ -21,13 +21,23 @@ class StackArray{
         size++;
     }
 
+    public void pop(){
+        if(size == 0){
+            System.out.println("Stack is empty");
+            return;
+        }
+        int value;
+        value = stack[size - 1];
+        size--;
+    }
+
     public void display(){
         if(size == 0){
             System.out.println("Stack is empty");
             return;
         }
         for(int i = size - 1; i >= 0; i--){
-            System.out.println("top :- " + stack[i]);
+            System.out.println("Top :- " + stack[i]);
         }
     }
 }

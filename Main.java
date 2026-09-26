@@ -6,6 +6,21 @@ class Main{
         ss.push(60);
         ss.push(70);
         ss.push(80);
+        ss.push(90);
+        ss.push(100);
+        ss.push(200);
+        ss.push(800);
+        ss.push(801);
+        ss.display();
+
+        System.out.println("POP implement 1");
+        ss.pop();
+        ss.display();
+        System.out.println("POP implement 2");
+        ss.pop();
+        ss.display();
+        System.out.println("POP implement 3");
+        ss.pop();
         ss.display();
     }
 }
