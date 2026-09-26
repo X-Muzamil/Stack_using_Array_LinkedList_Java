@@ -22,5 +22,10 @@ class Main{
         System.out.println("POP implement 3");
         ss.pop();
         ss.display();
+
+        ss.peek();
+        System.out.println("isEmpty :- " + ss.isEmpty());
+        System.out.println("isFull :- " + ss.isFull());
+        ss.size();
     }
 }

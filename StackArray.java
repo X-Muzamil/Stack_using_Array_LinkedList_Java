@@ -31,13 +31,38 @@ class StackArray{
         size--;
     }
 
+    public void peek(){
+        int value;
+        value = stack[size - 1];
+    }
+
+    public boolean isEmpty(){
+        if(size == 0){
+            return true;
+        }
+        else return false;
+    }
+
+    public boolean isFull(){
+        if(size == capacity)
+            return true;
+        else
+            return false;
+    }
+
+    public void size(){
+        System.out.println("Size of the arrayfilled :- " + size);
+    }
+
+
+
     public void display(){
         if(size == 0){
             System.out.println("Stack is empty");
             return;
         }
         for(int i = size - 1; i >= 0; i--){
-            System.out.println("Top :- " + stack[i]);
+            System.out.println(stack[i]);
         }
     }
 }
